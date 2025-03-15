@@ -1,0 +1,98 @@
+* {
+    font-family: "Verdana", sans-serif;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #calculator {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    row-gap: 30px;
+    padding: 30px;
+    background-color: gainsboro;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 4px;
+  }
+
+  #screen {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px;
+  }
+
+  #operation,
+  #number {
+    text-align: right;
+    line-height: 60px;
+    padding-right: 20px;
+  }
+
+  #operation {
+    height: 50px;
+    font-size: 25px;
+  }
+
+  #number {
+    height: 70px;
+    font-size: 50px;
+  }
+
+  #input {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  #input .row {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+  }
+
+  #input button {
+    flex: 1;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px;
+  }
+
+  #input button:hover {
+    filter: brightness(90%);
+  }
+
+  #input button:active {
+    box-shadow: 0px 0px 0px 0px;
+  }
+
+  #input .number,
+  #decimal {
+    background-color: lightskyblue;
+  }
+
+  #input .operator,
+  #equals {
+    background-color: lightgreen;
+  }
+
+  #clear,
+  #delete {
+    background-color: lightsalmon;
+  }
